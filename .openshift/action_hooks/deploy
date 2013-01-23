@@ -15,7 +15,7 @@ then
     echo 1>&2
 fi
 
-RETRY=60
+RETRY=300
 while [ $RETRY -gt 0 ] ; do
     #reload env variables
     for env_var in  $OPENSHIFT_HOMEDIR/.env/*
